@@ -1,0 +1,106 @@
+/* admin.css — estilos del panel de administración */
+
+
+.admin-wrapper {
+    max-width: 1200px;
+    margin: 120px auto 40px auto;
+    padding: 0 20px;
+}
+
+.admin-titulo {
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    color: #ffa500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.admin-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2C2F35;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-tabla th {
+    background-color: #333141;
+    color: #04BD7D;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.admin-tabla td {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 13px;
+    border-bottom: 1px solid #444;
+}
+
+.admin-tabla tr:hover {
+    background-color: #3a3d45;
+}
+
+.btn-borrar {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+.btn-borrar:hover {
+    background-color: #cc0000;
+}
+
+.btn-editar {
+    background-color: #04BD7D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #029d67;
+}
+
+.badge-admin {
+    background-color: #ffa500;
+    color: #1b192c;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.badge-usuario {
+    background-color: #515966;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.btn-logout {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #cc0000;
+}

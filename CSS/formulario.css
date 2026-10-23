@@ -1,0 +1,301 @@
+
+
+.form-completo-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #2C2F35;
+    padding: 40px 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.form-completo-wrapper h2 {
+    text-align: center;
+    color: #04BD7D;
+    font-family: 'VT323', monospace;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-grupo label {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo input[type="password"],
+.form-grupo input[type="tel"],
+.form-grupo input[type="date"],
+.form-grupo select,
+.form-grupo textarea {
+    width: 100%;
+    background-color: #515966;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 6px;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: border-bottom 0.3s, background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-grupo input[type="date"] {
+    color-scheme: dark;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    border-bottom: 2px solid #04BD7D;
+    background-color: #5e6370;
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #aaa;
+}
+
+.form-grupo select option {
+    background-color: #2C2F35;
+    color: #fff;
+}
+
+.form-grupo textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 250px;
+}
+
+.error-msg {
+    display: none;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 68, 68, 0.15);
+}
+
+.campo-error {
+    border-bottom: 2px solid #ff4444 !important;
+    background-color: rgba(255, 68, 68, 0.1) !important;
+}
+
+.campo-ok {
+    border-bottom: 2px solid #04BD7D !important;
+    background-color: rgba(4, 189, 125, 0.1) !important;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 45px !important;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #aaa;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+#toggle-password:hover {
+    color: #04BD7D;
+}
+
+.barra-fuerza-wrapper {
+    margin-top: 8px;
+    height: 6px;
+    background-color: #444;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#barra-fuerza-password {
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+#texto-fuerza-password {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #aaa;
+}
+
+.form-grupo-radio,
+.form-grupo-check {
+    margin-bottom: 20px;
+}
+
+.form-grupo-radio label.titulo-grupo,
+.form-grupo-check label.titulo-grupo {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.opciones-radio,
+.opciones-check {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.opcion-radio,
+.opcion-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ddd;
+    background-color: #3a3d45;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.opcion-radio:hover,
+.opcion-check:hover {
+    background-color: #4a4e58;
+}
+
+.opcion-radio input,
+.opcion-check input {
+    width: auto !important;
+    accent-color: #04BD7D;
+    cursor: pointer;
+}
+
+#contador-mensaje {
+    font-size: 12px;
+    color: #04BD7D;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.terminos-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.terminos-wrapper input[type="checkbox"] {
+    width: auto !important;
+    margin-top: 2px;
+    accent-color: #04BD7D;
+    cursor: pointer;
+}
+
+.terminos-wrapper a {
+    color: #04BD7D;
+    text-decoration: underline;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #04BD7D;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+    background-color: #029d67;
+}
+
+#mensaje-exito {
+    display: none;
+    background-color: rgba(4, 189, 125, 0.2);
+    border: 1px solid #04BD7D;
+    color: #04BD7D;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.seccion-formulario {
+    padding: 60px 20px;
+    background-color: #1b192c;
+}
+
+.seccion-formulario .titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.seccion-formulario .titulo-seccion::before,
+.seccion-formulario .titulo-seccion::after {
+    content: "";
+    flex: 1;
+    height: 6px;
+    background-color: #ffa500;
+    border-radius: 3px;
+    position: static;
+    transform: none;
+    width: auto;
+}
+
+/* ========================================================
+   FORZAR ESTILO DE ERROR EN HOVER Y FOCUS
+   ======================================================== */
+   .form-grupo input.campo-error,
+   .form-grupo select.campo-error,
+   .form-grupo textarea.campo-error,
+   .form-grupo input.campo-error:hover,
+   .form-grupo input.campo-error:focus,
+   .form-grupo select.campo-error:hover,
+   .form-grupo select.campo-error:focus {
+       border-bottom: 2px solid #ff4444 !important; /* Borde rojo */
+       background-color: rgba(255, 68, 68, 0.05) !important; /* Fondo ligeramente rojizo */
+       outline: none !important;
+   }
+   
+   /* Opcional: Asegurarnos de que el texto del error también sea siempre rojo */
+   .error-msg {
+       color: #ff4444 !important;
+   }

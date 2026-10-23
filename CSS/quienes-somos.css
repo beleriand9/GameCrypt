@@ -1,0 +1,31 @@
+.contenido-quienes-somos h1{
+    text-align:center;
+     margin-bottom:20px;
+     margin-right: 50px;
+     font-size: 40px;
+     color: #00eaff;
+     letter-spacing: 2px;
+}
+
+section{
+    color: #d7d7d7;
+    margin-top: 140px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    
+}
+.contenido-quienes-somos h2 {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #87f7c4;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.final{
+    text-align: center;
+    font-weight: bold;
+}

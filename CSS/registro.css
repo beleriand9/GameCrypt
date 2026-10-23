@@ -1,0 +1,63 @@
+
+#abrir-ventana {
+    display: none;
+}
+
+.overlay {
+    display: none !important;
+}
+
+
+.input-field {
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #04BD7D;
+}
+
+form p {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+form p a {
+    color: #04BD7D;
+    margin-left: 5px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    width: 48%;
+    font-size: 16px;
+    background-color: #04BD7D;
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn-field button:hover {
+    background-color: #029d67;
+}
+
+.btn-field button.disable {
+    background-color: #EAEAEA;
+    color: #2C2F35;
+}

@@ -1,0 +1,70 @@
+#reseñas-usuarios {
+  padding: 50px 20px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+#reseñas-usuarios .titulo-seccion {
+  font-size: 2rem;
+  display: flex;
+  /* barra - texto - barra en una fila */
+  align-items: center;
+  /* centra las barras en vertical con el texto */
+  gap: 20px;
+  /* SEPARACIÓN entre las barras y el texto */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 0;
+}
+
+#reseñas-usuarios .titulo-seccion::before,
+#reseñas-usuarios .titulo-seccion::after {
+  content: "";
+  flex: 1;
+  /* cada barra ocupa el espacio que sobra */
+  height: 6px;
+  background-color: #ffa500;
+  border-radius: 3px;
+}
+
+
+
+
+.reseñas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reseña {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.reseña:hover {
+  transform: translateY(-5px);
+}
+
+.estrellas {
+  color: #f5c518;
+  margin-bottom: 10px;
+}
+
+.comentario {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.usuario {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #ffa500;
+}

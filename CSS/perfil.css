@@ -1,0 +1,133 @@
+
+.overlay-perfil {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.overlay-perfil.activo {
+    display: flex;
+}
+
+.ventana-perfil {
+    background-color: #2C2F35;
+    padding: 30px 40px;
+    border-radius: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 420px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    z-index: 10000;
+}
+
+.ventana-perfil h1 {
+    font-size: 28px;
+    color: #04BD7D;
+    margin-bottom: 20px;
+}
+
+
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #515966;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    color: #04BD7D;
+}
+
+.ventana-perfil p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 6px 0;
+    text-align: left;
+}
+
+.ventana-perfil p strong {
+    color: #fff;
+}
+
+
+.perfil-separador {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 15px 0;
+}
+
+
+.perfil-subtitulo {
+    font-size: 14px;
+    color: #04BD7D;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+
+.perfil-barra-xp-wrapper {
+    width: 100%;
+    height: 8px;
+    background-color: #444;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 6px 0 12px;
+}
+
+.perfil-barra-xp {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #04BD7D, #ffa500);
+    border-radius: 4px;
+    transition: width 1.2s ease;
+}
+
+
+.perfil-select {
+    width: 100%;
+    background-color: #515966;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 4px;
+}
+
+.perfil-select option {
+    background-color: #2C2F35;
+}
+
+.cerrar-perfil-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.cerrar-perfil-btn:hover {
+    color: #04BD7D;
+}

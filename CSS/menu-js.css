@@ -1,0 +1,132 @@
+
+#menu-js {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu-opcion {
+    position: relative;
+}
+
+.menu-opcion-texto {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+    font-size: 15px;
+    user-select: none;
+}
+
+.menu-opcion-texto:hover {
+    background-color: #4c7d99;
+    color: #ffa500;
+}
+
+.menu-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2C2F35;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    min-width: 200px;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.menu-subopcion {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+    display: block;
+}
+
+.menu-subopcion:hover {
+    background-color: #4c7d99;
+    color: #ffa500;
+}
+
+
+#reloj-tiempo-real {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    color: #04BD7D;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgba(4, 189, 125, 0.1);
+    border: 1px solid rgba(4, 189, 125, 0.3);
+    transition: color 0.3s;
+    user-select: none;
+    margin-right: 10px;
+}
+
+#reloj-tiempo-real:hover {
+    background-color: rgba(4, 189, 125, 0.2);
+}
+
+
+#ticker-noticias {
+    display: none; 
+    background-color: #ffa500;
+    color: #1b192c;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+#ticker-noticias .ticker-contenido {
+    display: inline-block;
+    animation: ticker-scroll 30s linear infinite;
+    padding-left: 100%;
+}
+
+@keyframes ticker-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+#btn-volver-arriba {
+    display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #04BD7D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btn-volver-arriba:hover {
+    background-color: #029d67;
+    transform: scale(1.1);
+}
+
+#info-sistema {
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    cursor: help;
+    font-family: monospace;
+}
