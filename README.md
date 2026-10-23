@@ -51,3 +51,4 @@ La base de datos `gamecrypt_db` se crea sola la primera vez que se conecta (por 
 ## Autoría
 
 Ana Belén Rueda Reina
+Gabriel Fernández Cañadas
